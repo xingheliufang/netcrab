@@ -18,12 +18,15 @@ pub enum Mode {
 #[derive(Args, Debug)]
 #[clap(about = "connect mode")]
 pub struct ConnectCli {
+    /// Connect address
     pub addr: String,
 }
 
 #[derive(Args, Debug)]
 #[clap(about = "listen mode")]
 pub struct ListenCli {
+    /// Listen address
     pub addr: String,
+    /// Execte command
     pub cmd: Vec<String>,
 }
